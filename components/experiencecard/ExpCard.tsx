@@ -25,12 +25,14 @@ export default function ExpCard({
       </div>
 
       <div className='flex flex-col gap-3 my-2 rounded-3xl pl-4 p-8 bg-gray-100/10'>
-        <div className='flex justify-between items-center'>
+        <div className='flex gap-4 justify-between items-center'>
           <h1 className='text-4xl'>{jobTitle} @ {companyName}</h1>
           {link && (
             <a href={link} target="_blank" rel="noopener noreferrer">
               <button className='p-2 border-2 rounded-full border-white hover:bg-black'>
-                <ArrowUpRight size={32} />
+              <ArrowUpRight 
+        className='md:w-8 md:h-8 w-6 h-6' 
+      />
               </button>
             </a>
           )}
