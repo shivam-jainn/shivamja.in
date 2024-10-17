@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Page() {
   return (
-    <div className='h-full p-8 bg-black text-white'>
+    <div className='h-full overflow-auto p-8 bg-black text-white'>
       <h1 className='text-6xl font-bold mb-4'>
         Hi, I'm Shivam Jain!
       </h1>
