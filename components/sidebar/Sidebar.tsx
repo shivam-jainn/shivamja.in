@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useAtom } from 'jotai';
 import { sideBarAtom } from '@/atoms/sidebar';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link'; // Import Link from next/link
 
 const menuVariants = {
   hidden: { opacity: 0, x: '100%' },
@@ -22,12 +23,9 @@ export default function Sidebar() {
   };
 
   return (
-    <div className='md:hidden relative px-4'>
+    <div className="md:hidden relative px-4">
       {/* Hamburger Button */}
-      <button
-        className={`${isOpen ? "z-9" : ""}`}
-        onClick={toggleMenu}
-      >
+      <button className={`${isOpen ? "z-9" : ""}`} onClick={toggleMenu}>
         {!isOpen && <Menu />}
       </button>
 
@@ -45,9 +43,7 @@ export default function Sidebar() {
             onClick={closeMenu} // Close menu when clicking outside
           >
             {/* Menu Container */}
-            <motion.div
-              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the menu
-            >
+            <motion.div onClick={(e) => e.stopPropagation()}>
               {/* Close Button */}
               <button
                 className="absolute top-8 right-4 text-white"
@@ -65,19 +61,32 @@ export default function Sidebar() {
                 className="text-white text-3xl space-y-8 text-center"
               >
                 <li>
-                  <a href="#home" onClick={closeMenu} className="hover:underline">
-                    Home
-                  </a>
+                  <Link href="/blog">
+                    <button onClick={closeMenu} className="hover:underline hover:font-bold">
+                      blog
+                    </button>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about" onClick={closeMenu} className="hover:underline">
-                    About
-                  </a>
+                  <Link href="/experiences">
+                    <button onClick={closeMenu} className="hover:underline hover:font-bold">
+                      experiences
+                    </button>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" onClick={closeMenu} className="hover:underline">
-                    Contact
-                  </a>
+                  <Link href="/me">
+                    <button onClick={closeMenu} className="hover:underline hover:font-bold">
+                      about me
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <button onClick={closeMenu} className="hover:underline hover:font-bold">
+                      contact
+                    </button>
+                  </Link>
                 </li>
               </motion.ul>
             </motion.div>
