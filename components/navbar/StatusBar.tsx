@@ -15,7 +15,7 @@ export default function StatusBar() {
           </button>
         </Link>
 
-        <Link href="/about">
+        <Link href="/me">
           <button className='px-4 py-3 rounded-full hover:underline hover:font-bold'>
             about me
           </button>

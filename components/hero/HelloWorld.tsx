@@ -12,17 +12,20 @@ export const worldInDifferentLanguages = {
   turkish: "Dünya",
   tamil: "உலகம்",
   bengali: "পৃথিবী",
-  gujurati : "દુનિયા",
-  kannada : "ಜಗತ್ತು"
-};
+  gujarati: "દુનિયા",
+  kannada: "ಜಗತ್ತು"
+} as const; // Use 'as const' to create a readonly object
+
+// Create a type for the keys of the worldInDifferentLanguages object
+type Language = keyof typeof worldInDifferentLanguages;
 
 export default function HelloWorld() {
-  const [lang, setLang] = useState("english"); // Set initial language
-  const languageKeys = Object.keys(worldInDifferentLanguages); // Array of language keys
+  const [lang, setLang] = useState<Language>("english"); // Set initial language
+  const languageKeys = Object.keys(worldInDifferentLanguages) as Language[]; // Cast keys to Language[]
   const [currentIndex, setCurrentIndex] = useState(0); // Index to track current language
 
   useEffect(() => {
-    // Cycle through languages every 3 seconds
+    // Cycle through languages every 1.5 seconds
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % languageKeys.length);
       setLang(languageKeys[currentIndex]);
@@ -37,22 +40,19 @@ export default function HelloWorld() {
         Hello {worldInDifferentLanguages[lang]}
       </h1>
 
+      <div className='flex flex-col justify-center items-center gap-1'>
+        <div className='text-3xl max-md:text-xl max-md:hidden'>
+          I am <span className='font-black'>Shivam Jain</span> and I
+        </div>
 
-    <div className='flex flex-col justify-center items-center gap-1'>
-      <div className='text-3xl max-md:text-xl max-md:hidden'>
-       I am <span className='font-black'>Shivam Jain</span> and I
-      </div>
-      
-      <div className='text-3xl md:hidden'>
-       I love to
-      </div>
+        <div className='text-3xl md:hidden'>
+          I love to
+        </div>
 
-      <div className='text-6xl max-md:text-center'>
-        Design. Develop. Deploy.
+        <div className='text-6xl max-md:text-center'>
+          Design. Develop. Deploy.
+        </div>
       </div>
-    </div>
-
     </div>
   );
 }
-
