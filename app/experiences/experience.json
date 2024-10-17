@@ -1,0 +1,68 @@
+[
+    {
+      "startDate": "Jun 2024",
+      "endDate": "Present",
+      "jobTitle": "Tooling and CI Intern",
+      "companyName": "Calix",
+      "techStack": ["React", "FastAPI"],
+      "responsibilities": [
+        "Revamping and building internal tools from the ground up, migrating the existing codebase from PHP to React and FastAPI.",
+        "Automated various tasks for Atlassian products such as Jira and Bamboo.",
+        "Developed numerous script enhancements and automated manual processes, significantly improving team efficiency."
+      ]
+    },
+    {
+      "startDate": "Jun 2024",
+      "endDate": "Sep 2024",
+      "jobTitle": "Open Source Contributor in DMP",
+      "companyName": "MeitY",
+      "techStack": [
+        "NextJS",
+        "LLM with RAG",
+        "Redis",
+        "IMAP"
+      ],
+      "responsibilities": [
+        "Developing an open source project (DPG) under MeitY for the Prime Minister Office and iGot project, under the name Karmayogi.",
+        "Utilizes NextJS, LLM with RAG (For SQL DB queries, natural language processing to SQL query execution) to help SPOs make queries against 'n' number of databases at once.",
+        "Includes components like Mass Mailer.",
+        "Used Redis as queuing service for mass marketing tool (mass mailer, mass messaging).",
+        "Pixel tracking webhooks for tracking mailing data, showing user's devices, browsers, etc.",
+        "Converted Email client into revamped Chat interface using IMAP, making SMS, WhatsApp, and email into an omnichannel."
+      ],
+      "link": "https://github.com/shivam-jainn/Meity-iGOT-KarmaYogi"
+    },
+    {
+      "startDate": "Mar 2024",
+      "endDate": "May 2024",
+      "jobTitle": "SDE Developer Intern",
+      "companyName": "Techvestors",
+      "techStack": [
+        "NextJS",
+        "Terraform",
+        "Docker"
+      ],
+      "responsibilities": [
+        "Led backend development efforts and supervised a team of 2 backend developers.",
+        "Developed frontend components and implemented serverless APIs for the backend using NextJS.",
+        "Managed data modeling, APIs, and enhanced backend robustness by implementing comprehensive test cases.",
+        "Used Terraform and Docker to make the code work anywhere on any service."
+      ]
+    },
+    {
+      "startDate": "Jul 2023",
+      "endDate": "Nov 2023",
+      "jobTitle": "Full Stack Developer Intern",
+      "companyName": "SwiftRide",
+      "techStack": [
+        "React",
+        "Recoil.js"
+      ],
+      "responsibilities": [
+        "Spearheaded frontend development, making critical decisions and task management in collaboration with another developer.",
+        "Utilized React and Recoil.js to swiftly develop frontend components and pages, aligning with UI/UX designer specifications within a month.",
+        "Orchestrated seamless integration of web sockets and APIs, occasionally designing frontend pages using Figma."
+      ]
+    }
+  ]
+  
