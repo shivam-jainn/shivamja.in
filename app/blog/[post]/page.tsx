@@ -27,7 +27,7 @@ async function getPostData(post: string): Promise<PostData> {
     const postData = await getPostData(params.post);
   
     return (
-      <div className="p-8 px-32 h-full w-full">
+      <div className="p-8 flex flex-col gap-3 items-center justify-center overflow-x-auto h-full w-full">
          <Image 
           src={postData.imageLink} 
           alt={postData.title} 
