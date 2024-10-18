@@ -38,9 +38,9 @@ export default function ExpCard({
           )}
         </div>
 
-        <div className='flex gap-3'>
+        <div className='flex gap-3 flex-wrap'>
           {techStack.map((tech, index) => (
-            <div key={index} className='px-3 py-1 rounded-2xl bg-gray-300/60'>
+            <div key={index} className='px-3 py-1  rounded-2xl bg-gray-300/60'>
               {tech}
             </div>
           ))}
