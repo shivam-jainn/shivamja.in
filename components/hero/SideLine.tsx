@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import Link from "next/link"
 
 export default function SideLine() {
   return (
@@ -10,8 +11,17 @@ export default function SideLine() {
 
 
       <div className="flex flex-col gap-3">
+        <Link href={"https://www.linkedin.com/in/shivamjainn/"}>
+        <div>
         <FontAwesomeIcon icon={faLinkedin} size="xl" />
+        </div>
+        </Link>
+
+        <Link href={"https://github.com/shivam-jainn"}>
+        <div>
         <FontAwesomeIcon icon={faGithub} size="xl" />
+        </div>
+        </Link>
       </div>
     </div>
   )
