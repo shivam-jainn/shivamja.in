@@ -50,28 +50,28 @@ This is the DB URL : `postgresql://<user>:<password>@localhost:<port>/<dbname>`
 
 1. Visit [Google's API Dashboard](https://console.cloud.google.com/apis/dashboard) and create a new project.
 
-![A screenshot of google's website API dashboard](./assets/nextauth_oauth/gcloud_api_dashboard.png)
+![A screenshot of google's website API dashboard](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/gcloud_api_dashboard.png?raw=true)
 
 2. In the project, navigate to the **Credentials** tab.
 
-![A screenshot of google's oauth credentials tab](./assets/nextauth_oauth/gcloud_api_cred.png)
+![A screenshot of google's oauth credentials tab](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/gcloud_api_cred.png?raw=true)
 
 
 3. Click **Create Credentials** and select **OAuth client ID**.
 
 
-![A ss of oauth ,click on create creds , click on oauth id](./assets/nextauth_oauth/gcloud_api_step3.png)
+![A ss of oauth ,click on create creds , click on oauth id](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/gcloud_api_step3.png?raw=true)
 
 4. Under **Application type**, select **Web Application**.
 
-![A ss of oauth ,click on Application type , click on website](./assets/nextauth_oauth/gcloud_api_step4.png)
+![A ss of oauth ,click on Application type , click on website](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/gcloud_api_step4.png?raw=true)
 
 5. Fill in the details:
    - **Authorized JavaScript origins**: `http://localhost:3000`
    - **Authorized redirect URIs**: `http://localhost:3000/api/auth/callback/google`
 
 
-![step 5](./assets/nextauth_oauth/gcloud_api_step5.png)
+![step 5](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/gcloud_api_step5.png?raw=true)
 
 6. Copy the **Client ID** and **Client Secret**.
 
@@ -88,18 +88,18 @@ GOOGLE_CLIENT_SECRET="Paste your Google client secret here"
 
 1. Visit the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application.
 
-![Discord oauth home](./assets/nextauth_oauth/discord_oauth_home.png)
+![Discord oauth home](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/discord_oauth_home.png?raw=true)
 
-![Create application discord oauth](./assets/nextauth_oauth/discord_oauth_create_app.png)
+![Create application discord oauth](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/discord_oauth_create_app.png?raw=true)
 
 2. Select the **OAuth2** tab.
 
-![screenshot of clicking on oauth2 tab](./assets/nextauth_oauth/discord_oauth2_tab.png)
+![screenshot of clicking on oauth2 tab](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/discord_oauth2_tab.png?raw=true)
 
 3. Under **Redirects**, add the following:
    - `http://localhost:3000/api/auth/callback/discord`
 
-![alt text](./assets/nextauth_oauth/disc_redirectes.png)
+![alt text](https://github.com/shivam-jainn/shivamja.in/blob/e62e0bd21c409df7c52dd6ce877851cb1d141295/app/blog/posts/assets/nextauth_oauth/disc_redirectes.png?raw=true)
 
 4. Copy the **Client ID** and **Client Secret**.
 
