@@ -1,7 +1,7 @@
 ---
 title: "Setup OAuth with NextAuth , Prisma and Postgres"
 date: "2024-10-23"
-description: "Set up **NextAuth.js** in your **Next.js 13+ App Router** project with **Google**, **Discord**, and **GitHub OAuth**. Learn how to integrate **Prisma ORM** with **PostgreSQL**, configure OAuth providers, and manage database migrations for a seamless authentication system. Perfect for building secure, scalable apps."
+description: "Set up NextAuth.js in your Next.js 13+ App Router project with Google, Discord, and GitHub OAuth. Learn how to integrate Prisma ORM with PostgreSQL. "
 author: "Shivam jain"
 imageLink: "https://images.pexels.com/photos/28097263/pexels-photo-28097263/free-photo-of-water-texture-abstract-oil.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 ---
