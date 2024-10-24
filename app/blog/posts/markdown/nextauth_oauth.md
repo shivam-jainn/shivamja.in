@@ -37,7 +37,7 @@ To start the database:
 
 Your database URL will look like this:
 
-```plaintext
+```url
 postgresql://admin:password@localhost:5432/pgdb
 ```
 
