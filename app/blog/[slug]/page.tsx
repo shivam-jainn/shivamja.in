@@ -32,11 +32,11 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const post = await getPostData(params.slug);
 
   return (
-    <div className="p-8 flex flex-col items-center h-full overflow-x-auto w-full">
+    <div className='h-full p-8 w-full overflow-y-auto  flex flex-col items-center'>
       <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
       <p className="text-gray-600 mb-4">{post.date}</p>
       <div
-        className="prose prose-2xl dark:prose-invert"
+        className="prose prose-lg sm:prose-xl lg:prose-2xl dark:prose-invert max-w-screen-md w-full"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
     </div>
